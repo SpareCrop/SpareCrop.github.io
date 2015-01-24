@@ -95,7 +95,7 @@ header h2 {
 }
 
 #container .inner img {
-  max-width: 100%;
+  max-width: 50%;
 }
 
 #downloads {
@@ -334,6 +334,16 @@ footer a:hover {
   visibility: hidden;
   content: '.';
 }
+
+
+input[type=submit] {
+  border: none; /*rewriting standard style, it is necessary to be able to change the size*/
+  height: 50px;
+  width: 150px
+}
+
+
+
 
 .clearfix {display: inline-block;}
 * html .clearfix {height: 1%;}
