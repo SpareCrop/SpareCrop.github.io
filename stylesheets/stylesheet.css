@@ -52,8 +52,8 @@ body {
   font-size: 1em;
   line-height: 1.5;
   color: #6d6d6d;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
-  background: #e7e7e7 url(../images/body-bg.png) 0 0 repeat;
+  /*text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);*/
+  background: #e7e7e7 url(../images/peaches.jpg) center no-repeat;
 }
 
 a {
@@ -86,7 +86,7 @@ header h2 {
 
 #container {
   min-height: 595px;
-  background: transparent url(../images/highlight-bg.jpg) 50% 0 no-repeat;
+  /*background: transparent url(../images/highlight-bg.jpg) 50% 50% no-repeat;*/
 }
 
 .inner {
@@ -183,12 +183,12 @@ pre {
   overflow: auto;
   color: #f2f2f2;
   text-shadow: none;
-  background: #303030;
+  /*background: #303030;*/
 }
 pre code {
   padding: 0;
   color: #f2f2f2;
-  background-color: #303030;
+ /* background-color: #303030;*/
   border: none;
 }
 
@@ -233,7 +233,7 @@ td {
 
 form {
   padding: 20px;
-  background: #f2f2f2;
+  /*background: #f2f2f2;*/
 
 }
 
@@ -340,8 +340,18 @@ input[type=submit] {
   border: none; /*rewriting standard style, it is necessary to be able to change the size*/
   height: 50px;
   width: 150px
+  background:transparent;
+  margin-bottom: 8px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #303030;
+
 }
 
+input[placeholder] {
+
+  text-align: center;
+}
 
 
 

@@ -22,7 +22,7 @@
 
         <header>
 
-          <img src = "images/Screen Shot 2015-01-22 at 4.23.15 PM.png" align="middle" >
+          <img src = "images/sparecropLogo.png" align="middle" >
           
           <h1></h1>
           <h2>The best way to get and share local produce</h2>
@@ -44,28 +44,11 @@
   <!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
   <input type='hidden' name='redirect_to' value='http://sparecrop.com/thank-you.html' />
   <!-- all your input fields here.... -->
-  <input type='email' name='email' required='required' size="20" style="font-size:30pt"/>
+  <input type='email' name='email' placeholder="Please enter your email" required='required' size="24" style="font-size:30pt"/>
+  <hr>
   <input type='submit' value='Submit' style="font-size:30pt"/>
 </form>
       
-
-        <script>
-
-          $.ajax({
-              type: "POST",
-  url: "http://flypaperplane.com/api",
-  data: {   
-    // Example Form Data. Get it dynamically from user!
-     email: "ben@noveltie.com", 
-    message: "Hello World"
-  },
-  success: function(response) {
-    console.log(response);
-  },
-  dataType: "json"
-});
-          </script>
-
  <!--
         <section id="main_content">
           <h1>
