@@ -1,1 +1,1 @@
-# SpareCrop.github.io
+# sparecrop.github.io
