@@ -28,6 +28,8 @@
           <h2>The best way to get and share local produce</h2>
         </header>
 
+
+
         <!--
         <section id="downloads" class="clearfix">
           <a href="https://github.com/sparecrop" id="view-on-github" class="button"><span>View on GitHub</span></a>
@@ -36,6 +38,24 @@
         
 
         <hr>
+
+        <script>
+
+          $.ajax({
+              type: "POST",
+  url: "http://flypaperplane.com/api",
+  data: {   
+    // Example Form Data. Get it dynamically from user!
+     email: "ben@noveltie.com", 
+    message: "Hello World"
+  },
+  success: function(response) {
+    console.log(response);
+  },
+  dataType: "json"
+});
+          </script>
+
  <!--
         <section id="main_content">
           <h1>
