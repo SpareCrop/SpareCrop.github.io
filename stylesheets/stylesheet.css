@@ -29,7 +29,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
-  text-shadow: 0 0 10px rgba(0,0,0,0.4);
+  text-shadow: 0 0 20px rgba(0,0,0, 0.4);
 }
 ol, ul {
 	list-style: none;
@@ -58,7 +58,8 @@ body {
 }
 
 a {
-  color: #d5000d;
+  color: #6d6d6d;
+  text-shadow: 0 1px 0 rgba(0,0,0, 0.8);
 }
 a:hover {
   color: #c5000c;
@@ -262,6 +263,7 @@ h3 {
 h4 {
   font-size: 16px;
   font-weight: bold;
+  text-shadow: 0 0 20px rgba(0,0,0, .4);
   color: #303030;
 }
 
