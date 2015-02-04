@@ -66,8 +66,8 @@ a:hover {
 }
 
 header {
-  padding-top: 35px;
-  padding-bottom: 25px;
+  padding-top: 40px;
+  padding-bottom: 5px;
 }
 
 header h1 {
@@ -203,9 +203,9 @@ ul, ol, dl {
 
 hr {
   height: 1px;
-  padding-bottom: 1em;
-  margin-top: 1em;
-  line-height: 1px;
+  padding-bottom: 1px;
+  margin-top: 1px;
+  line-height: .5px;
   background: transparent url('../images/hr.png') 50% 0 no-repeat;
   border: none;
 }
@@ -264,7 +264,7 @@ h4 {
   font-size: 16px;
   font-weight: bold;
   text-shadow: 0 0 20px rgba(0,0,0, .4);
-  color: #303030;
+  color: #DACACF;
 }
 
 h5 {
