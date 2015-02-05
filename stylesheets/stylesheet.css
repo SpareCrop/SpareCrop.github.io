@@ -261,10 +261,18 @@ h3 {
 }
 
 h4 {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: bold;
   text-shadow: 0 0 20px rgba(0,0,0, .4);
   color: #DACACF;
+}
+
+span {
+  font-size: 14px;
+  font-weight: bold;
+  text-shadow: 0 0 20px rgba(0,0,0, .4);
+  color: #DACACF;
+}
 }
 
 h5 {
@@ -355,6 +363,19 @@ input[placeholder] {
 
   text-align: center;
 }
+
+
+
+/*
+div.transbox {
+    margin: 1px;
+    background-color: #000000;
+    opacity: .1;
+    filter: alpha(opacity=20); /* For IE8 and earlier */
+/*} */
+
+
+
 
 
 
