@@ -97,6 +97,7 @@ header h2 {
 .inner {
   width: 620px;
   margin: 0 auto;
+  text-align: center;
 }
 
 #container .inner img {
@@ -408,6 +409,7 @@ div.transbox {
   .inner {
     width: 94%;
     margin: 0 auto;
+    text-align: center;
   }
 }
 
