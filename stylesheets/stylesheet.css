@@ -30,6 +30,9 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
   text-shadow: 0 0 1px rgba(0,0,0, 0.2);
+  text-align: middle;
+  vertical-align: middle;
+
 }
 ol, ul {
 	list-style: none;
