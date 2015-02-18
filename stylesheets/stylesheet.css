@@ -348,9 +348,7 @@ footer a:hover {
 
 
 input[type=submit] {
-  border: none; /*rewriting standard style, it is necessary to be able to change the size*/
-  height: 50px;
-  width: 150px
+
   background:transparent;
   margin-bottom: 8px;
   font-size: 22px;
