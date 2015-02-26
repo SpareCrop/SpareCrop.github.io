@@ -18,7 +18,8 @@
 
   </head>
 
-  <body>
+  <body onload = changebackground();>
+    <div id="wrap">
     <div id="container">
       <div class="inner">
 
@@ -53,66 +54,66 @@
         
               We are planning a <strong>crowdfunding campaign</strong> and would love to hear your feedback, advice, suggestions, criticism, etc. 
 
-We promise to not spam you or use your email address for anything not related to this project.
+              We promise to not spam you or use your email address for anything not related to this project.
 
-<br><br>
+              <br><br>
 
-<!--START OF REACHMAIL FORM, CUT FROM HERE DOWN-->
-<script type="text/javascript">
-function submitIt(form) {
-var checkEmail = "@.";
-var checkStr = form.rm_email.value;
-var EmailValid = false;
-var EmailAt = false;
-var EmailPeriod = false;
-var bad = "";
-for (i = 0;  i < checkStr.length;  i++)
-{
-     ch = checkStr.charAt(i);
-     for (j = 0;  j < checkEmail.length;  j++)
-     {
-        if (ch == checkEmail.charAt(j) && ch == "@")
-        EmailAt = true;
-        if (ch == checkEmail.charAt(j) && ch == ".")
-           EmailPeriod = true;
-        if (EmailAt && EmailPeriod)
-              break;
-        if (j == checkEmail.length)
-              break;
-      }
-      if (EmailAt && EmailPeriod)
-      {
-        EmailValid = true;
-        break;
-      }
-}
-if (!EmailValid)
-{
-bad = bad + "\n    Please enter a valid Email Address.";
-}
-if (bad != "") {alert("Please fill in the following fields:"+bad +"\n"); return (false);}
-return (true);
-}
-</script>
-<!--END OF JAVASCRIPT-->
-<form name="signup" method="post" onSubmit="return submitIt(this);" action="https://go.reachmail.net/libraries/form_wizard/process_subscribe.asp">
-<input type="text" id="rm_email" name="rm_email" placeholder="Please enter your email" required='required' size="21" style="font-size:28pt"/>
-<br />
-<input type="hidden" name="my_type" value="3" />
-<input type="hidden" name="form_id" value="11542">
-<input type="hidden" name="list_name" value="XLIST_0A600F8DF19F49C3AB35336ACC07A5B5">
-<input type="hidden" name="list_id" value="697481">
-<input type="hidden" name="el_list" value="email">
-<input type="hidden" name="page_confirm" value="http://www.sparecrop.com/thank-you.html">
-<input type="hidden" name="list_fromname" value="">
-<input type="hidden" name="list_fromemail" value="">
-<input type="hidden" name="list_subject" value="">
-<input type="submit" value="Submit">
-</form>
-<!--REACHMAIL FORM ENDS HERE-->
+              <!--START OF REACHMAIL FORM, CUT FROM HERE DOWN-->
+              <script type="text/javascript">
+              function submitIt(form) {
+              var checkEmail = "@.";
+              var checkStr = form.rm_email.value;
+              var EmailValid = false;
+              var EmailAt = false;
+              var EmailPeriod = false;
+              var bad = "";
+              for (i = 0;  i < checkStr.length;  i++)
+              {
+                   ch = checkStr.charAt(i);
+                   for (j = 0;  j < checkEmail.length;  j++)
+                   {
+                      if (ch == checkEmail.charAt(j) && ch == "@")
+                      EmailAt = true;
+                      if (ch == checkEmail.charAt(j) && ch == ".")
+                         EmailPeriod = true;
+                      if (EmailAt && EmailPeriod)
+                            break;
+                      if (j == checkEmail.length)
+                            break;
+                    }
+                    if (EmailAt && EmailPeriod)
+                    {
+                      EmailValid = true;
+                      break;
+                    }
+              }
+              if (!EmailValid)
+              {
+              bad = bad + "\n    Please enter a valid Email Address.";
+              }
+              if (bad != "") {alert("Please fill in the following fields:"+bad +"\n"); return (false);}
+              return (true);
+              }
+              </script>
+              <!--END OF JAVASCRIPT-->
+              <form name="signup" method="post" onSubmit="return submitIt(this);" action="https://go.reachmail.net/libraries/form_wizard/process_subscribe.asp">
+              <input type="text" id="rm_email" name="rm_email" placeholder="Please enter your email" required='required' size="21" style="font-size:28pt"/>
+              <br />
+              <input type="hidden" name="my_type" value="3" />
+              <input type="hidden" name="form_id" value="11542">
+              <input type="hidden" name="list_name" value="XLIST_0A600F8DF19F49C3AB35336ACC07A5B5">
+              <input type="hidden" name="list_id" value="697481">
+              <input type="hidden" name="el_list" value="email">
+              <input type="hidden" name="page_confirm" value="http://www.sparecrop.com/thank-you.html">
+              <input type="hidden" name="list_fromname" value="">
+              <input type="hidden" name="list_fromemail" value="">
+              <input type="hidden" name="list_subject" value="">
+              <input type="submit" value="Submit">
+              </form>
+              <!--REACHMAIL FORM ENDS HERE-->
 
 
-<br>
+              <br>
 
 
         <script>
@@ -139,35 +140,71 @@ return (true);
 
         <center>
 
-<!-- =========================================================== -->
-<script type="application/javascript">
-var myCountdown1 = new Countdown({
-                  
-// Using "number of seconds"
-                         //time   : 15, // Total number of seconds to count down.
-                         //
-                         // --- OR ---
-                         //
-                         // Using a "dead line" date (NOTE: If "time" set this deadline date will NOT be used ("time" over-rides date))
-                         year   : 2015,  // (optional) The target date's year
-                         month  : 4,     // (optional) The target date's month
-                         day    : 2,     // (optional) The target date's day
-                         hour   : 0,     // (optional) The target date's hour 
-                         ampm   : "am",  // (optional) Is the hour refering to AM (early/day) or PM (late/night)?
-                         minute : 0,          // (optional) The target date's minutes
-                         second : 0,          // (optional) The target date's seconds
-                         offset : 0,          // (optional) Number of hours to offset. Can be positive or negative. 
+        <!-- =========================================================== -->
+        <script type="application/javascript">
+        var myCountdown1 = new Countdown({
+                          
+        // Using "number of seconds"
+                                 //time   : 15, // Total number of seconds to count down.
+                                 //
+                                 // --- OR ---
+                                 //
+                                 // Using a "dead line" date (NOTE: If "time" set this deadline date will NOT be used ("time" over-rides date))
+                                 year   : 2015,  // (optional) The target date's year
+                                 month  : 4,     // (optional) The target date's month
+                                 day    : 2,     // (optional) The target date's day
+                                 hour   : 0,     // (optional) The target date's hour 
+                                 ampm   : "am",  // (optional) Is the hour refering to AM (early/day) or PM (late/night)?
+                                 minute : 0,          // (optional) The target date's minutes
+                                 second : 0,          // (optional) The target date's seconds
+                                 offset : 0,          // (optional) Number of hours to offset. Can be positive or negative. 
 
-                  //time: 86400 * 36, // 86400 seconds = 1 day
-                  width:500, 
-                  height:110,  
-                  rangeHi:"day",
-                  style:"flip"  // <- no comma on last item!
-                  });
+                          //time: 86400 * 36, // 86400 seconds = 1 day
+                          width:500, 
+                          height:110,  
+                          rangeHi:"day",
+                          style:"flip",  // <- no comma on last item!
 
-</script>
 
-</center>
+                         labelText  : {
+                                       ms     : "MS",
+                                       second : "SECONDS",
+                                       minute : "MINUTES",
+                                       hour   : "HOURS",
+                                       day    : "DAYS",
+                                       month  : "MONTHS",
+                                       year   : "YEARS" // <- no comma on last item!
+                                    },  
+
+                         numbers  : {
+                             font : "Arial",
+                             color  : "#FFFFFF",
+                             //bkgd : "#365D8B",
+                             rounded  : 0.15 // percentage of size  (took out comma)
+                             //shadow : {
+                               //            x : 0, // x offset (in pixels)
+                                //           y : 3, // y offset (in pixels)
+                                //           s : 4, // spread
+                                //           c : "#000000", // color
+                                //           a : 0.4  // alpha
+                                //     }
+                             },
+                         labels : {
+                             font   : "Arial",
+                             color  : "#000000",
+                             offset : 0, // Number of pixels to push the labels down away from numbers. 
+                             textScale  : 0.7, // Percentage of size
+                             weight : "normal"  // < - no comma on last item!
+                         }  // < - no comma on last item!
+
+
+
+
+                          });
+
+        </script>
+
+        </center>
             <br>
             <h5>Spread the word!</h5>
 
@@ -182,9 +219,24 @@ var myCountdown1 = new Countdown({
 
       </div>
     </div>
+  </div>
 
     
         <script type='text/javascript'>(function () { var done = false;var script = document.createElement('script');script.async = true;script.type = 'text/javascript';script.src = 'https://app.purechat.com/VisitorWidget/WidgetScript';document.getElementsByTagName('HEAD').item(0).appendChild(script);script.onreadystatechange = script.onload = function (e) {if (!done && (!this.readyState || this.readyState == 'loaded' || this.readyState == 'complete')) {var w = new PCWidget({ c: 'c7c4f516-587b-45b9-84cd-ad7fbfccb806', f: true });done = true;}};})();</script>
+
+
+        <script type="text/javascript">
+        function changebackground() {
+            //var colors = ["#0099cc","#c0c0c0","#587b2e","#990000","#000000","#1C8200","#987baa","#464646","#AA8971","#1987FC","#99081E"];          
+            var img = ["url(images/bg/IMG_5674.JPG)", "url(images/bg/IMG_5675.JPG)", "url(images/bg/IMG_5676.JPG)", "url(images/bg/IMG_5677.JPG)", "url(images/bg/IMG_5678.JPG)", "url(images/bg/IMG_5679.JPG)", "url(images/bg/IMG_5680.JPG)", "url(images/bg/IMG_5681.JPG)", "url(images/bg/IMG_5682.JPG)", "url(images/bg/IMG_5683.JPG)", "url(images/bg/IMG_5684.JPG)", "url(images/bg/IMG_5685.JPG)"];
+            setInterval(function() {
+                var bodybgarrayno = Math.floor(Math.random() * img.length);
+                var selectedcolor = img[bodybgarrayno];
+                document.body.style.backgroundImage = selectedcolor;
+            }, 10000);
+        }
+        </script>
+
 
   </body>
 </html>

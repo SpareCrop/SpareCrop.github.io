@@ -90,6 +90,27 @@ header h2 {
   letter-spacing: -1px;
 }
 
+#wrap {
+  background: none repeat scroll 0 0 #fff;
+  border: 1px solid #999999;
+  border-radius: 15px 15px 15px 15px;
+  box-shadow: 0 0 10px #333333, 1px 1px 200px #bcbcbc inset;
+  color: #666666;
+  font-family: arial,serif;
+  font-size: 15px;
+  line-height: 20px;
+  margin: 40px auto 25px auto;
+  padding: 30px;
+  text-shadow: 1px 1px 0 #FFFFFF;
+  width: 640px;
+  height: 750px;
+  opacity: .9;
+  position: relative;
+  z-index: 99;
+}
+
+
+
 #container {
   min-height: 595px;
   /*background: transparent url(../images/highlight-bg.jpg) 50% 50% no-repeat;*/
@@ -276,7 +297,7 @@ span {
   font-size: 14px;
   font-weight: bold;
   text-shadow: 0 0 20px rgba(0,0,0, .4);
-  color: #DACACF;
+  color: #777777;
 }
 }
 
