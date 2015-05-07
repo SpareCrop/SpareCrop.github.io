@@ -59,10 +59,7 @@ body {
   /*text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);*/
   background: url(../images/jeremymeek1.JPG) 10% 10% no-repeat;
   background-position: center; 
-      -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
+
 }
 
 a {
