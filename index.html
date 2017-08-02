@@ -73,41 +73,52 @@
 
 <!--START OF REACHMAIL FORM, CUT FROM HERE DOWN-->
               <script type="text/javascript">
-              function submitIt(form) {
-              var checkEmail = "@.";
-              var checkStr = form.rm_email.value;
-              var EmailValid = false;
-              var EmailAt = false;
-              var EmailPeriod = false;
-              var bad = "";
-              for (i = 0;  i < checkStr.length;  i++)
+              function submitIt(form) 
               {
-                   ch = checkStr.charAt(i);
-                   for (j = 0;  j < checkEmail.length;  j++)
-                   {
-                      if (ch == checkEmail.charAt(j) && ch == "@")
-                      EmailAt = true;
-                      if (ch == checkEmail.charAt(j) && ch == ".")
-                         EmailPeriod = true;
-                      if (EmailAt && EmailPeriod)
-                            break;
-                      if (j == checkEmail.length)
-                            break;
-                    }
-                    if (EmailAt && EmailPeriod)
-                    {
-                      EmailValid = true;
-                      break;
-                    }
-              }
-              if (!EmailValid)
-              {
-              bad = bad + "\n    Please enter a valid Email Address.";
-              }
-              if (bad != "") {alert("Please fill in the following fields:"+bad +"\n"); return (false);}
-              return (true);
-              }
-              </script>
+	              var checkEmail = "@.";
+	              var checkStr = form.rm_email.value;
+	              var EmailValid = false;
+	              var EmailAt = false;
+	              var EmailPeriod = false;
+	              var bad = "";
+	              for (i = 0;  i < checkStr.length;  i++)
+	              {
+	                   ch = checkStr.charAt(i);
+	                   for (j = 0;  j < checkEmail.length;  j++)
+	                   {
+	                      if (ch == checkEmail.charAt(j) && ch == "@")
+	                      EmailAt = true;
+	                      if (ch == checkEmail.charAt(j) && ch == ".")
+	                         EmailPeriod = true;
+	                      if (EmailAt && EmailPeriod)
+	                            break;
+	                      if (j == checkEmail.length)
+	                            break;
+	                    }
+
+	                    if (EmailAt && EmailPeriod)
+	                    {
+	                      EmailValid = true;
+	                      break;
+	                    }
+	              }
+	              
+	              if (!EmailValid)
+	              {
+	             			bad = bad + "\n    Please enter a valid Email Address.";
+	              }
+
+	              if (bad != "") 
+	              {
+	              	alert("Please fill in the following fields:"+bad +"\n"); 
+	              	return (false);
+	              }
+	              
+	            return (true);
+
+	            }
+
+						  </script>
               <!--END OF JAVASCRIPT-->
 
              
@@ -190,7 +201,7 @@
                     <input type="submit" class="submit-button" />
                 </div>
               </form> -->
-        <br>
+        <!-- <br> -->
 
 <!--REACHMAIL FORM ENDS HERE-->
 
@@ -211,12 +222,28 @@
 
 
 <!--START OF REACHMAIL FORM, CUT FROM HERE DOWN-->
+<!-- <script type="text/javascript" src="https://ui.reachmail.net/api/lists/SubscriptionForm/optin/dynamic/noredirect/ab4040de-3182-426e-a6ab-a7c201434348"></script>
+<div class="container">
+    <form name="rm_signup_form" id="rm_signup_form" class="form-container" method="post" onsubmit="return submitIt(this);">
+    <form name="signup_form" id="signup_form" class="form-container" onsubmit="loadDoc('signup_form');	return false;">
+        <input class="form-field" type="text"  id="rm_email" name="rm_email" placeholder="Please enter your email" required='required'  size="21" style="font-size:28pt" /><br />
+        <br>  
+        <div class="submit-container">
+            <input type="submit" class="submit-button" />
+        </div>
+    </form>
+</div> -->
+
+<!--REACHMAIL FORM ENDS HERE-->
+
+<!--START OF REACHMAIL FORM, CUT FROM HERE DOWN-->
 <script type="text/javascript" src="https://ui.reachmail.net/api/lists/SubscriptionForm/optin/dynamic/noredirect/ab4040de-3182-426e-a6ab-a7c201434348"></script>
 <div class="container">
-    <form name="rm_signup_form" id="rm_signup_form" class="form-container" onsubmit="loadDoc('rm_signup_form');">
+   <!--  <form name="rm_signup_form" id="rm_signup_form" class="form-container" method="post" onsubmit="return submitIt(this);"> -->
+    <form name="rm_signup_form" id="rm_signup_form" class="form-container" onsubmit="loadDoc('rm_signup_form'); return false;">
         <label class="form-title"><span class="required" title="Required Field"></span> </label>
-        <input class="form-field" type="text" id="email"  required placeholder="Please enter your email" size="21" style="font-size:28pt" /><br />
-        <br>  
+        <input class="form-field" type="text" id="email" placeholder="Please enter your email" required='required'  size="21" style="font-size:28pt" /><br />
+        <br>
         <div class="submit-container">
             <input type="submit" class="submit-button" />
         </div>
